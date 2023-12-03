@@ -1,0 +1,6 @@
+*.txt
+*.json
+view_results.py
+steer_old.py
+vectors/
+__pycache__
