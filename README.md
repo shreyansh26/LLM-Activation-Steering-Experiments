@@ -24,7 +24,7 @@ Refer code [here](steer.py).
 ## RLHF-ed models
 RLHF-ed models are known to refuse answering questions which talk about personal preference, bias, toxcity and other harmful things. There are [various](https://arxiv.org/abs/2311.05553) [research works](https://www.lesswrong.com/posts/qmQFHCgCyEEjuy5a7/lora-fine-tuning-efficiently-undoes-safety-training-from) which show how finetuning with adversarial inputs which show how this refusal property of these models can be "unlearned".
 
-In [this code](refusal.py), it can be shown that using the activations from an adversarial dataset aimed to not perform refusal, can be used to steer the model output for some other input or question to not show refusal properties.
+In [this code](refuse.py), it can be shown that using the activations from an adversarial dataset aimed to not perform refusal, can be used to steer the model output for some other input or question to not show refusal properties.
 
 For both cases, it should be noted that the "attack" is very sensitive to inputs, which layer to attack and the multiplier values. However this can lead to interesting insights as to how this activation addition leads to reversal of some learned properties or steering of outputs.
 
